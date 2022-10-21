@@ -17,6 +17,11 @@
 		body {
 			background-color: #000;
 		}
+		hr {
+			margin: 30px 0px;
+			width: 100%;
+			border: 1px solid #fff; 
+		}
 		.wrap {
 			width: 300px;
 			margin: 30px auto 0px auto;
@@ -41,6 +46,9 @@
 			align-items: center;
 			box-shadow: 3px 3px 5px 0px #747474;
 		}
+		.wrap > a.last{
+			margin-bottom: 0px;
+		}
 		.wrap > a:hover {
 			background-color: #f2f2f2;
 		}
@@ -64,7 +72,40 @@
 			color: #f1f1f1;
 			font-size: 14px;
 			margin-top: 0px;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
+		}
+		.wrap_contact{
+			width: 300px;
+			border: 1px solid #fff;
+			border-radius: 8px;
+			margin: 30px 0;
+			padding: 10px 0;
+		}
+		.contact {
+			list-style: none;
+			padding: 0 20px;
+			margin: 0 0 0 0;
+		}
+		.contact li {
+			margin: 0 0 4px 0;
+		}
+		.contact li a {
+			color: #fff;
+			font-size:12px;
+			text-decoration: none;
+		}
+		.link_list {
+			width: 300px;
+			margin: 0px;
+			color: #fff;
+		}
+		.link_list li {
+			margin: 0 0 10px 0;
+		}
+		.link_list li a {
+			font-size: 14px;
+			color: #fff;
+			text-decoration: none;
 		}
 	</style>
 
@@ -74,11 +115,27 @@
 		<div class="profile"></div>
 		<h1 class="main">bbingho</h1>
 		<p class="sub">삥호가 사는 세상!</p>
+
+		<div class="wrap_contact">
+			<ul class="contact">
+				<li><a href="tel:01089781716">☎ 010.8978.1716</a></li>
+				<li><a href="mailto:bbingho@naver.com">📧 bbingho@naver.com</a></li>
+			</ul>
+		</div>
+
 		<a target="_blank" href="https://www.instagram.com/_bbdog/">INSTAGRAM</a>
 		<a target="_blank" href="https://www.facebook.com/bbingho/">FACEBOOK</a>
 		<a target="_blank" href="https://blog.naver.com/bbingho">BLOG</a>
 		<a target="_blank" href="http://www.doublei.co.kr/">더블아이</a>
-		<a target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
+		<a class="last" target="_blank" href="https://spartacodingclub.kr/">스파르타코딩클럽</a>
+		
+		<hr />
+		
+		<ul class="link_list">
+			<li><a target="_blank" href="#">Site Link 001</a></li>
+			<li><a target="_blank" href="#">Site Link 002</a></li>
+			<li><a target="_blank" href="#">Site Link 003</a></li>
+		</ul>
 	</div>
 </body>
 </html>
